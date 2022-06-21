@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient(to right, #b398c5, #e88cb3, #edb175);
+    text-align: center;
+    justify-content: center;
+}
+form{
+    text-align: center;
+    /* border: 2px solid black; */
+    /* padding: 30px; */
+    /* margin-bottom: 100px; */
+    border-radius: 10px;
+    background-color: rgb(245, 248, 248);
+}
+.container{
+    border: 2px solid black;
+    padding: 30px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}

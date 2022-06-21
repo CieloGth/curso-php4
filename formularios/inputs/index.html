@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<body>
+    <form action="./server.php" method="post" enctype="multipart/form-data">
+        
+        <!-- Input simple -->
+        <h1>Input Simple</h1>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+
+        <hr>
+        
+        <!--Arreglo de Input -->
+        <h1>Arreglo de Input</h1>
+        <label for="personas">Personas: </label>
+        <input type="text" name="personas[]">
+        <input type="text" name="personas[]">
+        <input type="text" name="personas[]">
+
+        <hr> 
+
+        <!--Arreglo Asociativo -->
+        <h1>Input Asociativo</h1>
+        <label for="persona">Persona: </label>
+        <label>Nombre: </label>
+        <input type="text" name="persona[nombre]">
+        <label>Email: </label>
+        <input type="email" name="persona[email]">
+        <label>Edad: </label>
+        <input type="number" name="persona[edad]">
+
+        <hr>
+        
+        <!--Checkbox-->
+        <h1>Input checkbox</h1>
+        <input type="checkbox" name="list1">
+        <input type="checkbox" name="list2" value="Este valor fue clickeado">
+        <input type="checkbox" name="list3">
+
+        <hr>
+
+        <!--Radio Button-->
+        <h1>Input Radio Button</h1>
+        <label for="mexico">Mexico</label>
+        <input type="radio" name="pais" value="-Mexico-" id="mexico">
+        <label for="colombia">Colombia</label>
+        <input type="radio" name="pais" value="Colombia" id="colombia">
+        <label for="peru">Peru</label>
+        <input type="radio" name="pais" value="--Peru--" id="peru">
+
+        <hr>
+
+        <!--Multiples Archivos-->
+        <h1>Multiples Archivos</h1>
+        <label for="galeria">Carga tus imagenes</label>
+        <input type="file" multiple name="galeria[]" id="galeria">
+
+        <button>Mandar Formulario</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+tipos de render 
+
+1.-SSR
+    El navegador del cliente es quien arma la estructura de la pagina con JS
+    Comun con React.js o Vue.js
+    Funciona:
+        -> usuario ingresa a una pagina web
+        -> el servidor manda una pagina web vacia con archivos JS
+        -> los arrchivos 
+2.-CSR
+3.-SSG
+$_get solicita datos al servidor pero nos permite enviar informacion a traves de la url
+$_post  recabar datos del usuario desde un  formulario y mandalo al sevidor (por detras de la pagina)

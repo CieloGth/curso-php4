@@ -1,14 +1,5 @@
 body{
     background: linear-gradient(to right, #c9def4, #f5ccd4, #b8a4c9);
-    /* 
-    background: linear-gradient(to right, #, #f5ccd4, #b8a4c9);
-    background: linear-gradient(to right, #, #f5ccd4, #b8a4c9);
-    background: linear-gradient(to right, #, #f5ccd4, #b8a4c9);
-    background: linear-gradient(to right, #, #f5ccd4, #b8a4c9);
-    background: linear-gradient(to right, #, #f5ccd4, #b8a4c9);
-    background: linear-gradient(to right, #, #f5ccd4, #b8a4c9); 
-    */
-    /* background: linear-gradient(to right, #b398c5, #e88cb3, #edb175); */
     text-align: center;
     justify-content: center;
 }
@@ -22,11 +13,21 @@ form{
 }
 
 .bg-danger {
-    background-color: #000000 !important;
-    color: #ff6161;
-    height: 200%;
+    background-color: #ff6161!important;
+     color: #fafafa; 
+    /* visibility: hidden; */
 }
 .bg-success {
-    background-color: #000000 !important;
-    color:  #5dffb4 !important;
+    background-color: #5dffb4 !important;
+    color:  #000000 !important;
+    /* visibility: hidden; */
+}
+.colores div{
+    width: 150px;
+    height: 50px;
+}
+.carousel-item button{
+    width: 40vw;
+    height: 50vh;
+    border: none;
 }

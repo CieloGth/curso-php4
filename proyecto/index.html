@@ -7,51 +7,153 @@
     <link rel="stylesheet" href="/proyecto/css/bootstrap.css">
     <link rel="stylesheet" href="/proyecto/style.css">
     <title>Formulario de Contacto</title>
+    <script src="https://kit.fontawesome.com/b57319cb40.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
 
-    <div class="container">
-        <br>
-        <div class="bg-danger">
-            <span>Surgio un problema</span>
+    <div class="container mt-5">
+        <div class="message">
+            <div class="alert alert-danger">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Surgio un problema</span>
+            </div>
+            <div class="alert alert-success">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Mensaje enviado con exito</span>
+            </div>
         </div>
-        <br>
-        <div class="bg-success">
-            <span>Mensaje enviado con exito</span>
+        <div class="card">
+            <h1 class="card-header">¡Contactanos!</h1>
+            <div class="card-body p-sm-3 p-md-4 p-lg-5">
+                <form class="container-fluid ">
+                    <div class="row-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="name">Nombre: </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control-lg" placeholder="Nombre" type="text" name="name" id="name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="email">Correo: </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control-lg" placeholder="email@ejemplo.com" type="email" name="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="tel">Telefono: </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control-lg" placeholder="Nombre" type="number" name="tel" id="tel">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="subject">Asunto: </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="form-control-lg" placeholder="Nombre" type="text" name="subject" id="subject">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="message">Mensaje: </label>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control-lg" placeholder="Nombre" name="message" id="message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <br>
-
-        <form action="#" >
-            <h1>¡Contactanos!</h1>           
-            <div>
-                <label for="name">Nombre: </label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div>
-                <label for="email">Correo: </label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="subject">Asunto: </label>
-                <input type="text" name="subject" id="subject">
-            </div>
-            <div>
-                <label for="message">Mensaje: </label>
-                <textarea name="message" id="message"></textarea>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-            <div class="contacto-info">
-                <div class="info">
-                    <span>Calle #,  , Puebla, Puebla, Mexico</span>
-                </div>
-                <div class="info">
-                    <span>+52 222 936 9584</span>
-                </div>
-            </div>
-        </form>
     </div>
+    <!-- <div class="bg-color">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+    
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><button onclick="color()"><a  onclick="color()">Elegir</a></button></div>
+                        <div class="carousel-item "><button style="background: linear-gradient(to right, #c9def4, #f5ccd4, #b8a4c9);" onclick=""><a href="/proyecto/hola.html">Elegir</a></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #efc7c2, #ffe5d4, #bfd3c1);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #e8d6cb, #d0ada7, #ad6a6c);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #c9def4, #f5ccd4, #b8a4c9);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #2e294e, #efbcd5, #be97c6);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #f1e3f3, #c2bbf0, #8fb8ed);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #d3f8e2, #e4c1f9, #f694c1);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #fac9b8, #e5d4c0, #c5decd);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #f1e3f3, #c2bbf0, #8fb8ed);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #fac9b8, #e5d4c0, #c5decd);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #f1fffa, #ccfccb, #96e6b3);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #defffc, #e2e4f6, #e7c8dd);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #b9ffb7, #abedc6, #98d9c2);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #ffb8d1, #e4b4c2, #e7cee3);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #7be0ad, #aee5d8, #e7e5e5);"></button></div>
+                        <div class="carousel-item"><button style="background: linear-gradient(to right, #b398c5, #e88cb3, #edb175);"></button></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+    <!-- <div class="hola">Hola</div> -->
     <script src="/proyecto/js/bootstrap.js"></script>
+    <script>
+        // function color(){
+        //     console.log(hola);
+        //     document.getElementsByClassName(hola).style.color="red";
+            
+        // }
+    </script>
 </body>
 </html>

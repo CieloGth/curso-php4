@@ -1,18 +1,20 @@
+:root{
+    --color: linear-gradient(to right, #d3f8e2, #e4c1f9, #f694c1);
+    --borde:
+}
 body{
-    background: linear-gradient(to right, #c9def4, #f5ccd4, #b8a4c9);
+    background: var(--color);
     text-align: center;
     justify-content: center;
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 2rem;
+    font-family: 'Bungee Inline', cursive;
 }
 form{
     text-align: center;
-    /* border: 2px solid black; */
-    /* padding: 30px; */
-    /* margin-bottom: 100px; */
     border-radius: 10px;
-    background-color: rgb(245, 248, 248);
+    background-color: white !important;
 }
 
 .bg-danger {
@@ -29,27 +31,56 @@ form{
     background-color: rgba(255, 255, 255, 0);
     box-shadow: 0.5px 0.5px 10px 10px grey;
 }
-/* .card-header{
-     height: 20vh;
-    text-align: center; 
-} */
 .card-body{
     background-color: white;
 }
+.r1{
+    text-align: left;
+}
 textarea{
-    width: 80%;
-    height: 20vh;
+    width: 90%;
+    height: 30vh;
 }
 input {
-    width: 80%;
+    width: 90%;
 }
 label{
     font-size: smaller;
     color: rgb(156, 154, 154);
 }
-form{
-    background-color: white !important;
+.r1{
+    text-align: left;
 }
+.r2{
+    justify-content: center;
+}
+.r2 button{
+    width: 30vw;
+    border-radius: 50px;
+    background: var(--color);
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 20%;
+}
+.men {
+    top: 0.5rem;
+}
+.form-control-lg {
+    padding: 0.5rem 2.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid #767676;
+}
+.input :hover{
+border: 2px solid red;
+}
+.fa-regular, .fa-solid {
+    font-size: 1.25rem;
+}
+
 
 /* .carousel-item button{
     width: 40vw;

@@ -3,6 +3,9 @@ body{
     text-align: center;
     justify-content: center;
 }
+h1{
+    font-size: 3.5rem;
+}
 form{
     text-align: center;
     /* border: 2px solid black; */
@@ -24,6 +27,14 @@ form{
 }
 .card {
     background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0.5px 0.5px 10px 10px grey;
+}
+/* .card-header{
+     height: 20vh;
+    text-align: center; 
+} */
+.card-body{
+    background-color: white;
 }
 textarea{
     width: 80%;
@@ -32,7 +43,6 @@ textarea{
 input {
     width: 80%;
 }
-
 label{
     font-size: smaller;
     color: rgb(156, 154, 154);
@@ -40,9 +50,7 @@ label{
 form{
     background-color: white !important;
 }
-.card-body{
-    background-color: white;
-}
+
 /* .carousel-item button{
     width: 40vw;
     height: 50vh;

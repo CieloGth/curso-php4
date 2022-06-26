@@ -58,6 +58,7 @@ label{
     width: 30vw;
     border-radius: 50px;
     background: var(--color);
+    border: transparent;
 }
 
 .input-group-text {

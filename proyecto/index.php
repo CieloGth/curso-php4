@@ -1,3 +1,25 @@
+<?php
+    function validate($name, $email, $telefono, $subject, $message){
+        return !empty($name) && !empty($email) && !empty($telefono) && !empty($subject) && !empty($message);
+    }
+    $status="";
+    if (isset($_post["form"])) {
+        if (validate(...$_post)) {
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $telefono = $_POST["telefono"];
+            $subject = $_POST["subject"];
+            $message = $_POST["message"];
+
+            //mandar correo
+
+            $status = "success";
+        }
+        else{
+            $status="danger";
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +28,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/proyecto/css/bootstrap.css">
     
-    <title>Formulario Contacto</title>
+    <title>Formulario de Contacto</title>
 
     <script src="https://kit.fontawesome.com/b57319cb40.js" crossorigin="anonymous"></script>
     <style>
@@ -21,19 +43,23 @@
 
     <div class="container mt-5">
         <div class="message">
-            <div class="alert alert-danger">
+            <?php if($status=="danger"):?>
+                <div class="alert alert-danger">
                 <i class="fa-solid fa-triangle-exclamation"></i>
                 <span>Surgio un problema</span>
-            </div>
-            <div class="alert alert-success">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Mensaje enviado con exito</span>
-            </div>
+                </div>  
+            <?php endif;?>
+            <?php if($status=="success"):?>
+                <div class="alert alert-success">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Mensaje enviado con exito</span>
+                </div>
+            <?php endif;?>
         </div>
         <div class="card">
             <div  class="card-header"><h1 class="m-3">¡Contactanos!</h1></div>
             <div class="card-body p-sm-3 p-md-4 p-lg-5">
-                <form class="container-fluid" action="./server.php" method="post">
+                <form class="container-fluid" action="./" method="post">
                     <div class="row r1">
                         <div class="col-md-6">
                             <div class="row">
@@ -87,7 +113,7 @@
                         </div>
                     </div>
                     <div class="row r2 mt-5">
-                        <button type="submit" >Enviar</button>
+                        <button name="form" type="submit" >Enviar</button>
                     </div>
                 </form>
             </div>

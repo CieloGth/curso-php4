@@ -1,13 +1,13 @@
 <?php
-    function validate($name, $email, $telefono, $subject, $message){
-        return !empty($name) && !empty($email) && !empty($telefono) && !empty($subject) && !empty($message);
+    function validate($name, $email, $tel, $subject, $message, $form){
+        return !empty($name) && !empty($email) && !empty($tel) && !empty($subject) && !empty($message);
     }
     $status="";
-    if (isset($_post["form"])) {
-        if (validate(...$_post)) {
+    if (isset($_POST["form"])) {
+        if (validate(...$_POST)) {
             $name = $_POST["name"];
             $email = $_POST["email"];
-            $telefono = $_POST["telefono"];
+            $tel = $_POST["tel"];
             $subject = $_POST["subject"];
             $message = $_POST["message"];
 
@@ -26,7 +26,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/proyecto/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     
     <title>Formulario de Contacto</title>
 
@@ -37,7 +37,7 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
             </style>
-    <link rel="stylesheet" href="/proyecto/style.css"> 
+    <link rel="stylesheet" href="./style.css"> 
 </head>
 <body id="body">
 
@@ -59,7 +59,7 @@
         <div class="card">
             <div  class="card-header"><h1 class="m-3">¡Contactanos!</h1></div>
             <div class="card-body p-sm-3 p-md-4 p-lg-5">
-                <form class="container-fluid" action="./" method="post">
+                <form class="container-fluid" action="./" method="POST">
                     <div class="row r1">
                         <div class="col-md-6">
                             <div class="row">
@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="col-12 input-group">
                                     <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
-                                    <input class="form-control-lg" placeholder="Telefono" type="number" name="tel" id="tel">
+                                    <input class="form-control-lg" placeholder="Telefono" type="number" name="tel" id="tel" min="1111111111" max="9999999999">
                                 </div>
                             </div>
                         </div>
@@ -124,13 +124,13 @@
                         <span>Av. Don Juan de Palafox y. Mendoza, Centro histórico de Puebla, 72000 Puebla, Pue., México</span>
                     </div>
                     <div class="col-md-4 col-lg-6 p-2">
-                        <i class="fa-solid fa-square-phone"></i>
+                        <i class="fas fa-phone"></i>
                         <span>+52 222 936 9584</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="/proyecto/js/bootstrap.js"></script>    
+    <script src="./js/bootstrap.js"></script>    
 </body>
 </html>

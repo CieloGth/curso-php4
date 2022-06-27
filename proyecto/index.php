@@ -1,4 +1,5 @@
-<?php vsage, $form){
+<?php 
+    function validate($name, $email, $tel, $subject, $message, $form){
         return !empty($name) && !empty($email) && !empty($tel) && !empty($subject) && !empty($message);
     }
     $status="";
